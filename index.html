@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Jewels & Crafts</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #FFFFF0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #FFFFF0;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #D4AF37;
+        }
+
+        /* Hero section styles */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #FFFFF0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Featured collections styles */
+        .featured {
+            padding: 4rem 0;
+        }
+        .featured h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #D4AF37;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 1rem;
+        }
+        .product-info h3 {
+            margin-bottom: 0.5rem;
+        }
+        .product-info p {
+            color: #666;
+        }
+        .price {
+            font-weight: bold;
+            color: #D4AF37;
+        }
+
+        /* About section styles */
+        .about {
+            background-color: #F5F5DC;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .about h2 {
+            color: #E2725B;
+            margin-bottom: 1rem;
+        }
+        .about p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #FFFFF0;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .social-icons {
+            margin-top: 1rem;
+        }
+        .social-icons a {
+            color: #FFFFF0;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin-bottom: 0.5rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#jewellery">Jewellery</a></li>
+                <li><a href="#handmade">Handmade</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Elegant Jewels & Crafts</h1>
+                <p>Discover exquisite jewellery and unique handmade crafts</p>
+            </div>
+        </section>
+
+        <section id="jewellery" class="featured">
+            <div class="container">
+                <h2>Featured Jewellery</h2>
+                <div class="product-grid">
+                    <!-- Product cards would be dynamically generated here -->
+                    <div class="product-card">
+                        <img src="jewellery1.jpg" alt="Gold Necklace">
+                        <div class="product-info">
+                            <h3>Gold Necklace</h3>
+                            <p>Elegant 18K gold necklace</p>
+                            <span class="price">$999</span>
+                        </div>
+                    </div>
+                    <!-- More product cards... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="handmade" class="featured">
+            <div class="container">
+                <h2>Handmade Crafts</h2>
+                <div class="product-grid">
+                    <!-- Product cards would be dynamically generated here -->
+                    <div class="product-card">
+                        <img src="craft1.jpg" alt="Handwoven Basket">
+                        <div class="product-info">
+                            <h3>Handwoven Basket</h3>
+                            <p>Artisanal basket made from natural fibers</p>
+                            <span class="price">$59</span>
+                        </div>
+                    </div>
+                    <!-- More product cards... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Our Story</h2>
+                <p>Elegant Jewels & Crafts brings together the finest jewellery from renowned brands and unique handmade crafts from skilled artisans. Our passion for quality and craftsmanship shines through in every piece we offer.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 Elegant Jewels & Crafts. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Example of dynamic product loading (would typically fetch from an API)
+            function loadProducts() {
+                const products = [
+                    { name: 'Silver Earrings', description: 'Delicate silver drop earrings', price: 129, image: 'earrings.jpg' },
+                    { name: 'Ceramic Vase', description: 'Hand-painted ceramic vase', price: 79, image: 'vase.jpg' },
+                    // More products...
+                ];
+
+                const productGrid = document.querySelector('#jewellery .product-grid');
+                products.forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'product-card';
+                    productCard.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <div class="product-info">
+                            <h3>${product.name}</h3>
+                            <p>${product.description}</p>
+                            <span class="price">$${product.price}</span>
+                        </div>
+                    `;
+                    productGrid.appendChild(productCard);
+                });
+            }
+
+            // Call function to load products
+            loadProducts();
+        });
+    </script>
+</body>
+</html>
